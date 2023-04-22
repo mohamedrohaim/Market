@@ -9,3 +9,7 @@ E:\backend tools\winForms\Market\Market\Market\obj\Debug\Market.csproj.GenerateR
 E:\backend tools\winForms\Market\Market\Market\obj\Debug\Market.csproj.CoreCompileInputs.cache
 E:\backend tools\winForms\Market\Market\Market\obj\Debug\Market.exe
 E:\backend tools\winForms\Market\Market\Market\obj\Debug\Market.pdb
+E:\backend tools\winForms\Market\Market\Market\bin\Debug\EntityFramework.dll
+E:\backend tools\winForms\Market\Market\Market\bin\Debug\EntityFramework.xml
+E:\backend tools\winForms\Market\Market\Market\obj\Debug\Market.Screens.Users.NewUser.resources
+E:\backend tools\winForms\Market\Market\Market\obj\Debug\Market.csproj.CopyComplete
