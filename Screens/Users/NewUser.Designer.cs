@@ -36,7 +36,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.picture = new System.Windows.Forms.PictureBox();
-            this.addImage = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picture)).BeginInit();
             this.SuspendLayout();
             // 
@@ -116,29 +116,30 @@
             // 
             this.picture.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.picture.InitialImage = null;
-            this.picture.Location = new System.Drawing.Point(400, 338);
+            this.picture.Location = new System.Drawing.Point(374, 277);
             this.picture.Name = "picture";
             this.picture.Size = new System.Drawing.Size(354, 260);
+            this.picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picture.TabIndex = 13;
             this.picture.TabStop = false;
+            this.picture.Click += new System.EventHandler(this.picture_Click);
             // 
-            // addImage
+            // label5
             // 
-            this.addImage.BackColor = System.Drawing.Color.Lime;
-            this.addImage.Location = new System.Drawing.Point(629, 287);
-            this.addImage.Name = "addImage";
-            this.addImage.Size = new System.Drawing.Size(111, 34);
-            this.addImage.TabIndex = 14;
-            this.addImage.Text = "اضف صوره";
-            this.addImage.UseVisualStyleBackColor = false;
-            this.addImage.Click += new System.EventHandler(this.button2_Click);
+            this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.Color.Red;
+            this.label5.Location = new System.Drawing.Point(567, 258);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(161, 16);
+            this.label5.TabIndex = 14;
+            this.label5.Text = "*اضغط علي المربع لاضافه صوره";
             // 
             // NewUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1101, 631);
-            this.Controls.Add(this.addImage);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.picture);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -165,6 +166,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox picture;
-        private System.Windows.Forms.Button addImage;
+        private System.Windows.Forms.Label label5;
     }
 }
