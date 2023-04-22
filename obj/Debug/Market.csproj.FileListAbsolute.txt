@@ -1,0 +1,11 @@
+E:\backend tools\winForms\Market\Market\Market\bin\Debug\Market.exe.config
+E:\backend tools\winForms\Market\Market\Market\bin\Debug\Market.exe
+E:\backend tools\winForms\Market\Market\Market\bin\Debug\Market.pdb
+E:\backend tools\winForms\Market\Market\Market\obj\Debug\Market.csproj.AssemblyReference.cache
+E:\backend tools\winForms\Market\Market\Market\obj\Debug\Market.csproj.SuggestedBindingRedirects.cache
+E:\backend tools\winForms\Market\Market\Market\obj\Debug\Market.Form1.resources
+E:\backend tools\winForms\Market\Market\Market\obj\Debug\Market.Properties.Resources.resources
+E:\backend tools\winForms\Market\Market\Market\obj\Debug\Market.csproj.GenerateResource.cache
+E:\backend tools\winForms\Market\Market\Market\obj\Debug\Market.csproj.CoreCompileInputs.cache
+E:\backend tools\winForms\Market\Market\Market\obj\Debug\Market.exe
+E:\backend tools\winForms\Market\Market\Market\obj\Debug\Market.pdb
