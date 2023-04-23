@@ -1,9 +1,11 @@
-﻿using System;
+﻿using Market.Screens.Users;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -19,7 +21,7 @@ namespace Market
 
         private void closeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void fileToolStripMenuItem_Click(object sender, EventArgs e)
@@ -60,6 +62,12 @@ namespace Market
         private void button5_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void addNewUserToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NewUser newUser= new NewUser();
+            newUser.Show();
         }
     }
 }

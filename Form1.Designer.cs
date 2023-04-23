@@ -30,8 +30,8 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.username = new System.Windows.Forms.TextBox();
+            this.password = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -58,22 +58,22 @@
             this.label2.Text = "كلمه السر";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // textBox1
+            // username
             // 
-            this.textBox1.Location = new System.Drawing.Point(125, 111);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(412, 22);
-            this.textBox1.TabIndex = 2;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox1.UseWaitCursor = true;
+            this.username.Location = new System.Drawing.Point(125, 111);
+            this.username.Name = "username";
+            this.username.Size = new System.Drawing.Size(412, 22);
+            this.username.TabIndex = 2;
+            this.username.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.username.UseWaitCursor = true;
             // 
-            // textBox2
+            // password
             // 
-            this.textBox2.Location = new System.Drawing.Point(125, 200);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(412, 22);
-            this.textBox2.TabIndex = 3;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.password.Location = new System.Drawing.Point(125, 200);
+            this.password.Name = "password";
+            this.password.Size = new System.Drawing.Size(412, 22);
+            this.password.TabIndex = 3;
+            this.password.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // button1
             // 
@@ -86,6 +86,7 @@
             this.button1.TabIndex = 4;
             this.button1.Text = "تسجيل ";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label3
             // 
@@ -94,7 +95,7 @@
             this.label3.ForeColor = System.Drawing.Color.SaddleBrown;
             this.label3.Location = new System.Drawing.Point(256, 26);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(169, 39);
+            this.label3.Size = new System.Drawing.Size(167, 38);
             this.label3.TabIndex = 5;
             this.label3.Text = "تسجيل دخول";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -106,8 +107,8 @@
             this.ClientSize = new System.Drawing.Size(711, 336);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.password);
+            this.Controls.Add(this.username);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -122,8 +123,8 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox username;
+        private System.Windows.Forms.TextBox password;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label3;
     }
