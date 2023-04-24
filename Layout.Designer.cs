@@ -142,6 +142,7 @@
             this.listProductsToolStripMenuItem.Name = "listProductsToolStripMenuItem";
             this.listProductsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.listProductsToolStripMenuItem.Text = "عرض المنتجات";
+            this.listProductsToolStripMenuItem.Click += new System.EventHandler(this.listProductsToolStripMenuItem_Click);
             // 
             // العملاءToolStripMenuItem
             // 

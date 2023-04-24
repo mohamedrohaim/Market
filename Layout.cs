@@ -78,5 +78,11 @@ namespace Market
 
             
         }
+
+        private void listProductsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ProductList productList=new ProductList();
+            productList.Show();
+        }
     }
 }

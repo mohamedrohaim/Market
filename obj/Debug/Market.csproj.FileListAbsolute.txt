@@ -15,3 +15,4 @@ E:\backend tools\winForms\Market\Market\Market\obj\Debug\Market.Screens.Users.Ne
 E:\backend tools\winForms\Market\Market\Market\obj\Debug\Market.csproj.CopyComplete
 E:\backend tools\winForms\Market\Market\Market\obj\Debug\Market.Layout.resources
 E:\backend tools\winForms\Market\Market\Market\obj\Debug\Market.Screens.Products.Product.resources
+E:\backend tools\winForms\Market\Market\Market\obj\Debug\Market.Screens.Products.ProductList.resources

@@ -100,6 +100,12 @@
     <Compile Include="Screens\Products\Product.Designer.cs">
       <DependentUpon>Product.cs</DependentUpon>
     </Compile>
+    <Compile Include="Screens\Products\ProductList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Products\ProductList.Designer.cs">
+      <DependentUpon>ProductList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Screens\Users\NewUser.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +131,9 @@
     <EmbeddedResource Include="Screens\Products\Product.resx">
       <DependentUpon>Product.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Products\ProductList.resx">
+      <DependentUpon>ProductList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Screens\Users\NewUser.resx">
       <DependentUpon>NewUser.cs</DependentUpon>
     </EmbeddedResource>
@@ -136,6 +145,7 @@
       <DependentUpon>Model1.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\Market.DB.Product.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -164,6 +174,7 @@
     <Content Include="Assets\Images\pay.png" />
     <Content Include="Assets\Images\plus.png" />
     <Content Include="Assets\Images\products.png" />
+    <None Include="Assets\Images\reload.png" />
     <Content Include="Assets\Images\report.png" />
     <Content Include="Assets\Images\shopping-cart.png" />
     <Content Include="Assets\Images\team.png" />
