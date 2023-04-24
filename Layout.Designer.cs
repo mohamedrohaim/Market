@@ -87,7 +87,7 @@
             // 
             this.closeToolStripMenuItem.Image = global::Market.Properties.Resources.cancel;
             this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
-            this.closeToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.closeToolStripMenuItem.Size = new System.Drawing.Size(117, 26);
             this.closeToolStripMenuItem.Text = "غلق";
             this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
             // 
@@ -105,7 +105,7 @@
             // 
             this.addNewUserToolStripMenuItem.Image = global::Market.Properties.Resources.plus;
             this.addNewUserToolStripMenuItem.Name = "addNewUserToolStripMenuItem";
-            this.addNewUserToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.addNewUserToolStripMenuItem.Size = new System.Drawing.Size(222, 26);
             this.addNewUserToolStripMenuItem.Text = "إضافه مستخدم جديد";
             this.addNewUserToolStripMenuItem.Click += new System.EventHandler(this.addNewUserToolStripMenuItem_Click);
             // 
@@ -124,14 +124,15 @@
             // 
             this.addNewProductToolStripMenuItem.Image = global::Market.Properties.Resources.plus;
             this.addNewProductToolStripMenuItem.Name = "addNewProductToolStripMenuItem";
-            this.addNewProductToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.addNewProductToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.addNewProductToolStripMenuItem.Text = "إضافه منتج";
+            this.addNewProductToolStripMenuItem.Click += new System.EventHandler(this.addNewProductToolStripMenuItem_Click);
             // 
             // managePoductsToolStripMenuItem
             // 
             this.managePoductsToolStripMenuItem.Image = global::Market.Properties.Resources.manager;
             this.managePoductsToolStripMenuItem.Name = "managePoductsToolStripMenuItem";
-            this.managePoductsToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.managePoductsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.managePoductsToolStripMenuItem.Text = "التحكم في المنتجات";
             this.managePoductsToolStripMenuItem.Click += new System.EventHandler(this.managePoductsToolStripMenuItem_Click);
             // 
@@ -139,7 +140,7 @@
             // 
             this.listProductsToolStripMenuItem.Image = global::Market.Properties.Resources.best_product;
             this.listProductsToolStripMenuItem.Name = "listProductsToolStripMenuItem";
-            this.listProductsToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.listProductsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.listProductsToolStripMenuItem.Text = "عرض المنتجات";
             // 
             // العملاءToolStripMenuItem

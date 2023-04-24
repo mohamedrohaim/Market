@@ -1,4 +1,5 @@
-﻿using Market.Screens.Users;
+﻿using Market.Screens.Products;
+using Market.Screens.Users;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -68,6 +69,14 @@ namespace Market
         {
             NewUser newUser= new NewUser();
             newUser.Show();
+        }
+
+        private void addNewProductToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Product product =new Product();  
+            product.Show();
+
+            
         }
     }
 }
