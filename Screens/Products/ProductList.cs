@@ -23,10 +23,7 @@ namespace Market.Screens.Products
             dataGridView1.DataSource=db.Products.ToList();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+      
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -76,6 +73,21 @@ namespace Market.Screens.Products
         {
             dataGridView1.DataSource = db.Products.ToList();
 
+        }
+
+        private void dataGridView1_SelectionChanged(object sender, EventArgs e)
+        {
+            string code = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+            var product = db.Products.Where(p => p.Code == code).FirstOrDefault();
+            if (product != null)
+            {
+                productName.Text = product.Name;
+                price.Text = product.Price.ToString();
+                barcode.Text = product.Code.ToString();
+                count.Text = product.Quantity.ToString();
+                notes.Text = product.Notes.ToString();
+
+            }
         }
     }
 }

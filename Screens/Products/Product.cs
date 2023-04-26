@@ -43,10 +43,13 @@ namespace Market.Screens.Products
                 try {
                     db.Products.Add(product);
                     db.SaveChanges();
+                    if (picture != null) { 
                     string newPass = Environment.CurrentDirectory + $"\\ProductsImages\\{product.Id}.jpg";
                     File.Copy(imgPass, newPass);
                     product.Image = newPass;
                     db.SaveChanges();
+                    }
+                    
                     MessageBox.Show("تم اضافه المنتج ");
                 }catch(Exception ex)
                 {
