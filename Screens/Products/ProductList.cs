@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
@@ -13,8 +14,10 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Market.Screens.Products
 {
+   
     public partial class ProductList : Form
     {
+        string imgPass;
         MarketEntities db=new MarketEntities();
         List<Product> products = new List<Product>();
         public ProductList()
@@ -86,6 +89,52 @@ namespace Market.Screens.Products
                 barcode.Text = product.Code.ToString();
                 count.Text = product.Quantity.ToString();
                 notes.Text = product.Notes.ToString();
+                if (product.Image != null) { 
+                picture.ImageLocation= product.Image;
+                }
+                else { picture.ImageLocation= null; }
+
+            }
+        }
+
+        private void saveButton_Click(object sender, EventArgs e)
+        {
+            string code = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+            var product = db.Products.Where(p => p.Code == code).FirstOrDefault();
+
+            if (product != null)
+            {
+                
+                try{
+                    product.Name = productName.Text;
+                    product.Price = decimal.Parse(price.Text);
+                    product.Quantity = int.Parse(count.Text);
+                    product.Notes = notes.Text;
+                    product.Code = barcode.Text;
+                    if (product.Image != null)
+                    {
+                        File.Delete(product.Image);
+                    }
+                    string newPass = Environment.CurrentDirectory + $"\\ProductsImages\\{product.Id}.jpg";
+                    File.Copy(imgPass, newPass);
+                    product.Image = newPass;
+                    db.SaveChanges();
+                    MessageBox.Show("تم تعديل المنتج بنجاح");
+                }
+                catch(Exception error) {
+                    MessageBox.Show(error.Message);
+                }
+            }
+
+        }
+
+        private void picture_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog dialog = new OpenFileDialog();
+            if (dialog.ShowDialog() == DialogResult.OK)
+            {
+                picture.ImageLocation = dialog.FileName;
+                imgPass = dialog.FileName;
 
             }
         }

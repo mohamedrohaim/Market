@@ -60,6 +60,7 @@ namespace Market.Screens.Products
                 price.Text= string.Empty;
                 count.Text = string.Empty;
                 notes.Text = string.Empty;
+              
                 picture.ImageLocation = string.Empty;                  
                     
 
@@ -78,6 +79,7 @@ namespace Market.Screens.Products
                 {
                     picture.ImageLocation = dialog.FileName;
                     imgPass = dialog.FileName;
+                    
                 }
 
 

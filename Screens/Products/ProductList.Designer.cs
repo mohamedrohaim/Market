@@ -80,7 +80,9 @@
             this.imageDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.productBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(12, 102);
+            this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(883, 452);
@@ -94,6 +96,7 @@
             this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
             this.nameDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.ReadOnly = true;
             this.nameDataGridViewTextBoxColumn.Width = 125;
             // 
             // codeDataGridViewTextBoxColumn
@@ -102,6 +105,7 @@
             this.codeDataGridViewTextBoxColumn.HeaderText = "Code";
             this.codeDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.codeDataGridViewTextBoxColumn.Name = "codeDataGridViewTextBoxColumn";
+            this.codeDataGridViewTextBoxColumn.ReadOnly = true;
             this.codeDataGridViewTextBoxColumn.Width = 125;
             // 
             // priceDataGridViewTextBoxColumn
@@ -110,6 +114,7 @@
             this.priceDataGridViewTextBoxColumn.HeaderText = "Price";
             this.priceDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.priceDataGridViewTextBoxColumn.Name = "priceDataGridViewTextBoxColumn";
+            this.priceDataGridViewTextBoxColumn.ReadOnly = true;
             this.priceDataGridViewTextBoxColumn.Width = 125;
             // 
             // quantityDataGridViewTextBoxColumn
@@ -118,6 +123,7 @@
             this.quantityDataGridViewTextBoxColumn.HeaderText = "Quantity";
             this.quantityDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.quantityDataGridViewTextBoxColumn.Name = "quantityDataGridViewTextBoxColumn";
+            this.quantityDataGridViewTextBoxColumn.ReadOnly = true;
             this.quantityDataGridViewTextBoxColumn.Width = 125;
             // 
             // notesDataGridViewTextBoxColumn
@@ -126,6 +132,7 @@
             this.notesDataGridViewTextBoxColumn.HeaderText = "Notes";
             this.notesDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.notesDataGridViewTextBoxColumn.Name = "notesDataGridViewTextBoxColumn";
+            this.notesDataGridViewTextBoxColumn.ReadOnly = true;
             this.notesDataGridViewTextBoxColumn.Width = 125;
             // 
             // imageDataGridViewTextBoxColumn
@@ -134,6 +141,7 @@
             this.imageDataGridViewTextBoxColumn.HeaderText = "Image";
             this.imageDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.imageDataGridViewTextBoxColumn.Name = "imageDataGridViewTextBoxColumn";
+            this.imageDataGridViewTextBoxColumn.ReadOnly = true;
             this.imageDataGridViewTextBoxColumn.Width = 125;
             // 
             // productBindingSource
@@ -335,6 +343,7 @@
             this.picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picture.TabIndex = 41;
             this.picture.TabStop = false;
+            this.picture.Click += new System.EventHandler(this.picture_Click);
             // 
             // label4
             // 
@@ -357,6 +366,7 @@
             this.saveButton.TabIndex = 39;
             this.saveButton.Text = "حفظ التعديل";
             this.saveButton.UseVisualStyleBackColor = false;
+            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
             // productName
             // 
