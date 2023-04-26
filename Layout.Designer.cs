@@ -81,7 +81,6 @@
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(76, 24);
             this.fileToolStripMenuItem.Text = " ملف";
-            this.fileToolStripMenuItem.Click += new System.EventHandler(this.fileToolStripMenuItem_Click);
             // 
             // closeToolStripMenuItem
             // 
@@ -89,7 +88,6 @@
             this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
             this.closeToolStripMenuItem.Size = new System.Drawing.Size(117, 26);
             this.closeToolStripMenuItem.Text = "غلق";
-            this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
             // 
             // usersToolStripMenuItem
             // 
@@ -99,7 +97,6 @@
             this.usersToolStripMenuItem.Name = "usersToolStripMenuItem";
             this.usersToolStripMenuItem.Size = new System.Drawing.Size(120, 24);
             this.usersToolStripMenuItem.Text = "المستخدمين";
-            this.usersToolStripMenuItem.Click += new System.EventHandler(this.usersToolStripMenuItem_Click);
             // 
             // addNewUserToolStripMenuItem
             // 
@@ -124,7 +121,7 @@
             // 
             this.addNewProductToolStripMenuItem.Image = global::Market.Properties.Resources.plus;
             this.addNewProductToolStripMenuItem.Name = "addNewProductToolStripMenuItem";
-            this.addNewProductToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.addNewProductToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.addNewProductToolStripMenuItem.Text = "إضافه منتج";
             this.addNewProductToolStripMenuItem.Click += new System.EventHandler(this.addNewProductToolStripMenuItem_Click);
             // 
@@ -132,15 +129,14 @@
             // 
             this.managePoductsToolStripMenuItem.Image = global::Market.Properties.Resources.manager;
             this.managePoductsToolStripMenuItem.Name = "managePoductsToolStripMenuItem";
-            this.managePoductsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.managePoductsToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.managePoductsToolStripMenuItem.Text = "التحكم في المنتجات";
-            this.managePoductsToolStripMenuItem.Click += new System.EventHandler(this.managePoductsToolStripMenuItem_Click);
             // 
             // listProductsToolStripMenuItem
             // 
             this.listProductsToolStripMenuItem.Image = global::Market.Properties.Resources.best_product;
             this.listProductsToolStripMenuItem.Name = "listProductsToolStripMenuItem";
-            this.listProductsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.listProductsToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.listProductsToolStripMenuItem.Text = "عرض المنتجات";
             this.listProductsToolStripMenuItem.Click += new System.EventHandler(this.listProductsToolStripMenuItem_Click);
             // 
@@ -204,7 +200,6 @@
             this.label3.Size = new System.Drawing.Size(136, 25);
             this.label3.TabIndex = 16;
             this.label3.Text = "فواتير المشتريات";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // button2
             // 
@@ -220,7 +215,6 @@
             this.button2.Size = new System.Drawing.Size(260, 180);
             this.button2.TabIndex = 15;
             this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -251,7 +245,6 @@
             this.saveButton.Size = new System.Drawing.Size(260, 180);
             this.saveButton.TabIndex = 11;
             this.saveButton.UseVisualStyleBackColor = false;
-            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
             // label4
             // 
@@ -315,7 +308,6 @@
             this.label6.Size = new System.Drawing.Size(76, 25);
             this.label6.TabIndex = 22;
             this.label6.Text = "المنتجات";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // button5
             // 
@@ -331,7 +323,7 @@
             this.button5.Size = new System.Drawing.Size(260, 180);
             this.button5.TabIndex = 21;
             this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.button5.Click += new System.EventHandler(this.showProducts);
             // 
             // Layout
             // 

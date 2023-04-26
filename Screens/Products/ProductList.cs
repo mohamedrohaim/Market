@@ -19,11 +19,12 @@ namespace Market.Screens.Products
     {
         string imgPass;
         MarketEntities db=new MarketEntities();
-        List<Product> products = new List<Product>();
+        List<DB.Product> products = new List<DB.Product>();
         public ProductList()
         {
             InitializeComponent();
-            dataGridView1.DataSource=db.Products.ToList();
+            products=db.Products.ToList();
+            dataGridView1.DataSource=products;
         }
 
       
@@ -137,6 +138,27 @@ namespace Market.Screens.Products
                 imgPass = dialog.FileName;
 
             }
+        }
+
+        private void delete_Click(object sender, EventArgs e)
+        {
+            string code = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+            var product = db.Products.Where(p => p.Code == code).FirstOrDefault();
+            if (product != null)
+            {
+
+                db.Products.Remove(product);
+                db.SaveChanges();
+                var s = MessageBox.Show("تم حذف المنتج بنجاح", "تم حذف المنتج برجاء اضافه منتجات جديده", MessageBoxButtons.YesNo);
+
+                products.Remove(product);
+                dataGridView1.DataSource =db.Products.ToList();
+
+            }
+
+
+
+
         }
     }
 }
